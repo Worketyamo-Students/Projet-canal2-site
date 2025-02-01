@@ -8,9 +8,6 @@
 }
 html{   
     font-size: var(--font-size);
-            width: 100vw;
-            height: 100vh;
-            overflow-x: hidden;
 }
 :root {
         --primary-font-family:"IBM Plex Sans Hebrew", sans-serif;
@@ -22,26 +19,24 @@ html{
         --webkit-margin-start:left 64px;
 }
 body{
-    min-width:100vw;
-    min-height: 100vh;
+    width:100vw;
     overflow-x: hidden;
     font-family: var(--font-family);
     display: flex;
     flex-direction: column;
-    gap:10px;
+    gap:1.7rem;
 }
     /* tout le header */
 header{
     display: flex;
     align-content: center;
-    justify-content:space-around;
+    justify-content:space-between;
 }
 .ul_nav{
     margin-top: 37px;
     font-family: var(--primary-font-family);
+    margin-left: 9rem;
     font-size: 28px;
-    justify-content: center;
-    align-items: center;
     display: flex;
     gap: 3rem;
     list-style: none;
@@ -54,28 +49,9 @@ header{
     color:var(--logo-color);
     text-decoration: underline;   
 }
-.logo2:hover{
-    color:var(--logo-color);
-    background-color: var(--primary-color);
-    transition: 200ms;
-    transform: translateY(-.5rem);
-    transition-duration: 300ms;
-    bottom: .1rem;
-    cursor: pointer;
-    transition: all linear 2s;
-}
+
 /*  when coding they is a norm to follow that is the block element modofier(BEM) */
- .ul_nav>Li>a::after{
-        content: '';
-        position: absolute;
-        width: 0%;
-        transform: scaleX(0);
-        height: 5px;
-        bottom: 0;
-        left: 0;A
-        background-color:var(--logo-color);
-        transition : transform 0.25s ease-out;
-}
+
 .ul_nav>li>:hover::after{
     width: 100%;
 }
@@ -91,9 +67,9 @@ header{
 } 
 .logo2{
     padding-left: 3.3rem;
-    margin: 2rem 2.8rem 0rem 8rem ;
+    margin: 2rem 2.8rem 1.5rem 8rem ;
     color: white;
-    border: #618264 solid 1rem;
+    border: #618264 solid 1.4rem;
     border-radius: 3rem;
     background-color:#618264;
     width: 9rem;
@@ -104,10 +80,9 @@ header{
 }
          /* secton une image de nganou et  */
 .container{
-    margin-left: 54px;
-    /* height: 100vh; */
-    width: 100%;
     display: flex;
+    margin: 0rem 2rem;
+    gap: 3rem;
 }
      /* image de droite du bat de header */
 
@@ -115,22 +90,45 @@ header{
         display: none;
      }
 .child1{
-    flex: 2;
-   
-    /* background-color: #ff3422; */
-    margin-right: 1rem;
-    background-image: url('../pics/ngaNOU.svg');
+    flex: 1.7;
+    background-image: url("../img/nganou.svg");
     background-size: cover;
-    background-repeat: no-repeat;
-    background-color: #000;
-    /* width: 40rem; */
     
+}
+.description_img{
+    margin-top: 40rem;
+    background-size: cover;
+    display: flex;
+    background:  linear-gradient(to bottom, rgba(181, 178, 178, 0), rgba(22, 21, 21, 0.968));
+    padding: 1rem;
+}
+.bar{
+    border: var(--bg-color) solid 0.6rem;
+    height: 9rem;
+    border-radius: 2rem;
+    margin-left: 1rem;
+}
+.text_description>h2{
+    margin-left: 2rem;
+    font-size: 2.5rem;
+    margin-right: 16rem;
+    font-weight: 700;
+    font-family: var(--primary-font-family);
+    color: #ffffff;
+    
+}
+.text_description>h6{
+    margin-left: 2rem;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 400;size: 2rem;
+    font-family: var(--secondary-font-family);
 }
 .child2{
     flex: 1;
     display: flex;
     flex-direction: column;
-    /* gap: 2.2rem; */
+    gap: 2.2rem;
     background-color: #618264;
     justify-content:space-between;
 
@@ -155,6 +153,11 @@ header{
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    flex: 1;
+}
+.b1>.img1{
+    flex: 1;
+
 }
 .b1>.imgtext1>h1{
     font-family: var(--primary-font-family);
@@ -168,11 +171,17 @@ header{
         size: 14px;
         line-height: 19.07px;
 }
+
 /* 2 */
 .b2{
     display: flex;
     flex-direction: row;
     gap: 17px;
+}
+.b2>.imgtext2{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 .b2>.imgtext2>h1{
     font-family: var(--primary-font-family);
@@ -204,6 +213,7 @@ header{
         size: 14px;
         line-height: 19.07px;
 }
+
 .container2{
     display: flex;
     width: 100%;

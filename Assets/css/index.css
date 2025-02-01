@@ -291,6 +291,7 @@ font-weight: 600;
 .container4{
     display: flex;
     margin-left: 60px;
+    gap: 2rem;
 }
 .canalimg{
     flex: 1;
@@ -377,6 +378,8 @@ font-weight: 600;
     display: flex;
     margin-left: 60px;
     margin-top: 10rem;
+    gap: 3rem
+    ;
 }
 .canalimg111{
     flex: 1;
@@ -412,7 +415,7 @@ font-weight: 600;
         display: flex;
 }
 
-h1{
+.invertext>h1{
     writing-mode: vertical-lr;
     transform:scale(-1,-1);
     font-family: var(--secondary-font-family);
@@ -436,9 +439,9 @@ h1{
     justify-content: center;
     margin-left: 1.7rem;
 }
-/* .wlw>img{
-    width: ;
-} */
+.wlw>img{
+    width:80vw;
+}
 .container8{
     display: flex;
     width: 100%;
@@ -481,12 +484,10 @@ font-family:var(--primary-font-family);
 font-size: 24px;
 font-weight: 600;
 }
-/* .container>.child1{
 
-} */
 footer {
     background: #79AC78;
-    height: 35rem;
+    height: 30rem;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -508,6 +509,7 @@ footer {
   .icon {
     display: flex;
     gap: 3rem;
+    padding-bottom: 4rem;
  }
 /* <!-- ----------------------------------------------------------------------------Mobile first version  of the canal2 website ------------------------------------------------------------------------- -->
  */

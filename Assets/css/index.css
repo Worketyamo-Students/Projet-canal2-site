@@ -83,6 +83,8 @@ header{
     display: flex;
     margin: 0rem 2rem;
     gap: 3rem;
+    height: 100%;
+    margin-bottom: 8rem;
 }
      /* image de droite du bat de header */
 
@@ -93,6 +95,7 @@ header{
     flex: 1.7;
     background-image: url("../img/nganou.svg");
     background-size: cover;
+    border-radius: 1rem;
     
 }
 .description_img{
@@ -129,7 +132,7 @@ header{
     display: flex;
     flex-direction: column;
     gap: 2.2rem;
-    background-color: #618264;
+    background-color: #a59d51;
     justify-content:space-between;
 
 }
@@ -225,6 +228,7 @@ header{
         font-style: italic;
         size: 13px;
         color: var(--bg-color);
+        margin-top: .6rem;
 }
 .l11>h5{
     font-family:var(--primary-font-family);
@@ -238,6 +242,7 @@ header{
     font-style: italic;
     size: 13px;
     color: var(--bg-color);
+    margin-top: .6rem;
 }
 .l22>h5{
 font-family:var(--primary-font-family);
@@ -250,6 +255,7 @@ font-weight: 600;
     font-style: italic;
     size: 13px;
     color: var(--bg-color);
+    margin-top: .6rem;
 }
 .l33>h5{
 font-family:var(--primary-font-family);
@@ -264,14 +270,14 @@ font-weight: 600;
     padding-top: 149px;
 }
 .container3>iframe{
-    border-radius: 20px;
+    border-radius: 2rem;
 }
 .container3>h1{
     font-size: 48px;
     font-family:var(--primary-font-family);
     font-weight: 600;
     line-height: 62.4px;
-    padding-bottom: 79px;
+    padding-bottom: 7rem;
 }
 .t{
     font-family: var(--primary-font-family);
@@ -320,8 +326,17 @@ font-weight: 600;
      flex-direction: row;
      padding-top: 10rem;  
 }
+.picky_square{
+    width: 20rem;
+    height: 20rem;
+    border-color:white ;
+    border: solid 0.1rem;
+}
+.m1{
+    margin: 1rem;
+}
 
-   .m11>h6{
+.m11>h6{
         font-family: var(--textiary-font-family);
         font-weight: 400;
         font-style: italic;
@@ -396,15 +411,17 @@ font-weight: 600;
         display: flex;
         width: 100vw;
 }
-.ver{
+.invertext>h1{
 
     border-left: 6px solid #618264;
     height: 100px;
     justify-content: center;
     align-items: center;
+    margin-left: 2rem;
     writing-mode: vertical-lr;
     transform:scale(-1,-1);
 }
+
 .container7>h1{
     writing-mode: vertical-lr;
     transform:scale(-1,-1);
@@ -413,6 +430,11 @@ font-weight: 600;
     line-height: 62.4px;
     font-size: 48px;
     color: var(--bg-color);
+}
+.translatetext{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 /* .wlw>img{
     width: ;

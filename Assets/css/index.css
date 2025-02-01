@@ -90,7 +90,7 @@ header{
 
  header>.material-symbols-outlined{
         display: none;
-     }
+}
 .child1{
     flex: 1.7;
     background-image: url("../img/nganou.svg");
@@ -133,7 +133,7 @@ header{
     flex-direction: column;
     gap: 2.2rem;
     background-color: #a59d51;
-    justify-content:space-between;
+    justify-content:space-around;
 
 }
 .child1>.b{
@@ -291,7 +291,6 @@ font-weight: 600;
 .container4{
     display: flex;
     margin-left: 60px;
-    gap: 2rem;
 }
 .canalimg{
     flex: 1;
@@ -320,6 +319,11 @@ font-weight: 600;
 }
 .container4>.canaltext>.vectorc{
     margin-top: 3.9rem;
+    gap: rem;
+}
+.vc{
+    height: 3rem;
+    width: 4rem;
 }
 .container5{
      display: flex;
@@ -378,8 +382,7 @@ font-weight: 600;
     display: flex;
     margin-left: 60px;
     margin-top: 10rem;
-    gap: 3rem
-    ;
+
 }
 .canalimg111{
     flex: 1;
@@ -408,6 +411,7 @@ font-weight: 600;
 }
 .container6>.canaltext111>.vectorcc{
     margin-top: 3.9rem;
+
 }
 .container7{
         margin-top: 14rem;
